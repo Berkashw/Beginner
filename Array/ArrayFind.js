@@ -9,4 +9,4 @@ const {name} = person
 const isEqual = name === 'Den'
 return isEqual
 }))
-console.log(clients.find(({name}) => name === 'Den'))
+console.log(clients.find(({name}) => name === 'Bori'))
