@@ -4,6 +4,9 @@ const person3 = {age: 10, name: 'Den', city:'Tver', authorized: true}
 
 const clients = [person1,person2,person3]
 
-clients.unshift(clients[clients.length -1])
-
+clients.push(clients[1])
+clients.unshift(clients[2])
 console.table(clients)
+
+const clientsUnique = [...new Set(clients)]
+console.table(clientsUnique)
