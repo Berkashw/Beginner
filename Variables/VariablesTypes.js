@@ -9,7 +9,7 @@ const objectType = {
     boolean: true
 }
 
-console.log( numberType + ' - ' + typeof (numberType))
+console.log( numberType + ' - ' + typeof numberType)
 console.log(stringType + ' - ' + typeof(stringType))
 console.log(booleanType + ' - ' + typeof(booleanType))
 console.log(nullType + ' - ' + typeof(nullType))
