@@ -7,7 +7,6 @@ const person6 = {age: 49, name:'Gor', city: 'Tver',authorized:false}
 
 
 const clients = [person1,person2,person3,person4,person5,person6]
-
-const acum = clients.reduce((sum, {age}) =>  {return sum + age},0)
+const acumAge = clients.reduce((sum, {age}) =>  {return sum + age},0)
    
-console.log(acum)
+console.table(acumAge)
