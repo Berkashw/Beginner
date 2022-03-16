@@ -8,7 +8,7 @@ const objectType = {
     string: 'abc',
     boolean: true
 }
-
+'objectType = [1,2,3,4,5] - error '
 console.log( numberType + ' - ' + typeof numberType)
 console.log(stringType + ' - ' + typeof(stringType))
 console.log(booleanType + ' - ' + typeof(booleanType))
