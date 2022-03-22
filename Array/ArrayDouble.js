@@ -3,10 +3,12 @@ const person2 = {age: 14, name:'Bori', city:'Pskov', authorized:false }
 const person3 = {age: 10, name: 'Den', city:'Tver', authorized: true}
 
 const clients = [person1,person2,person3]
-const multiple = 2
-const clientsDoubleAge = clients.map((client)=> {
-    client.age *= multiple
+function multiple(client) { 
+    client.age*=2
     return client
-})
+}
+
+const clientsDoubleAge = clients.map((client) => multiple(client))
+
 
 console.table(clientsDoubleAge)
