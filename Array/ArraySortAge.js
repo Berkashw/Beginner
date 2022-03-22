@@ -4,8 +4,7 @@ const person3 = {age: 10, name: 'Den', city:'Tver', authorized: true}
 
 const clients = [person1,person2,person3]
 
-clients.sort(({age:a},{age:b}) => {
-   return a - b
-})
+clients.sort(({age:a},{age:b}) =>  a - b
+)
 
 console.table(clients)
