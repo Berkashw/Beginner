@@ -6,10 +6,10 @@ const person5 = {age: 17, name:'Fin', city: 'Tula', authorized:true}
 const person6 = {age: 49, name:'Gor', city: 'Tver',authorized:false}
 
 const clients = [person1,person2,person3,person4,person5,person6]
-let acum = clients.reduce((acum,next)=> {
-    acum.age = acum.age + next.age
-    console.log(acum.age)
+const sumAgesOfClients = clients.reduce((acum,client) => {
+    acum = acum + client.age
+    console.log(acum)
     return acum
-})
+},0)
 
-console.table(acum)
+console.table(sumAgesOfClients)
