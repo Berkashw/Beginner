@@ -7,8 +7,8 @@ const person6 = {age: 49, name:'Gor', city: 'Tver',authorized:false}
 
 
 const clients = [person1,person2,person3,person4,person5,person6]
-const acumAge = clients.reduce((sum, {age}) =>  {return sum + age},0)
-const acumAgeRight = clients.reduceRight((sum, {age}) =>  {return sum + age},0)
+const acumAge = clients.reduce((sum, {age}) =>  sum + age,0)
+const acumAgeRight = clients.reduceRight((sum, {age}) => sum + age,0)
 
 console.table(acumAge)
 console.table(acumAgeRight)
