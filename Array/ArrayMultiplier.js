@@ -7,14 +7,14 @@ const person6 = {age: 49, name:'Gor', city: 'Tver',authorized:false}
 
 const clients = [person1,person2,person3,person4,person5,person6]
 
-function multiplier(arr,multIndex) {
-    const arrayTemp = arr.map(({...array}) => {
-        array.age *= multIndex
-        return array
+const parametrMultiplier = (itemArray,multIndex,param) => {
+    const arrayResult = itemArray.map(({...item}) => {
+        item[param] *= multIndex
+        return item
     })
-    return arrayTemp
+    return arrayResult
 }
 
-const arrayMultiplied = multiplier(clients,2)
+const arrayMultiplied = parametrMultiplier(clients,2,'age')
 
 console.table(arrayMultiplied)
