@@ -7,7 +7,7 @@ const person6 = {age: 49, name:'Gor', city: 'Tver',authorized:false}
 
 const clients = [person1,person2,person3,person4,person5,person6]
 
-const multiplyAnyParameter = (array,multiplier,parameter='age') => {
+const getArrayWhithMultipliedParameter = (array,multiplier,parameter='age') => {
     const arrayResult = array.map(({...item}) => {
         item[parameter] *= multiplier
         return item
@@ -15,7 +15,7 @@ const multiplyAnyParameter = (array,multiplier,parameter='age') => {
     return arrayResult
 }
 
-const arrayMultiplied = multiplyAnyParameter(clients,2,'age')
-const arrayMultipliedWithoutParameter = multiplyAnyParameter(clients,2)
+const arrayMultiplied = getArrayWhithMultipliedParameter(clients,2,'age')
+const arrayMultipliedWithoutParameter = getArrayWhithMultipliedParameter(clients,2)
 console.table(arrayMultiplied)
 console.table(arrayMultipliedWithoutParameter)

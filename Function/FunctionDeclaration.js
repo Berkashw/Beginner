@@ -1,5 +1,3 @@
-'use strict'
-
 console.log('Funtion before declaration - ' + sumNumbersFunction(11,11))
 
 function sumNumbersFunction(number1,number2) {

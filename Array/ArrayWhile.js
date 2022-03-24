@@ -11,6 +11,6 @@ let i = 0
 while (i<clients.length) {
     clients[i].age += clients[i].age
     clients[i].older = true
-        i++
+    i++
 }
 console.table(clients)

@@ -5,3 +5,10 @@
     "version": "0.2.0",
     "configurations": []
 }
+{
+	"jsxBracketSameLine": true,
+	"singleQuote": true,
+	"tabWidth": 2,
+	"semi": false,
+	"printWidth": 80
+}
