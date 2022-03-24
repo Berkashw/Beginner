@@ -7,8 +7,8 @@ const person6 = {age: 49, name:'Gor', city: 'Tver',authorized:false}
 
 const clients = [person1,person2,person3,person4,person5,person6]
 
-const parameterMultiplier = (itemArray,multiplier,parameter) => {
-    const arrayResult = itemArray.map(({...item}) => {
+const parameterMultiplier = (array,multiplier,parameter) => {
+    const arrayResult = array.map(({...item}) => {
         if (parameter == 'undefined')  {parameter = 'age'}
         item[parameter] *= multiplier
         return item
