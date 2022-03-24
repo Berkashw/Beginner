@@ -7,16 +7,16 @@ const person6 = {age: 49, name:'Gor', city: 'Tver',authorized:false}
 
 const clients = [person1,person2,person3,person4,person5,person6]
 
-const parametrMultiplier = (itemArray,multIndex,parametr) => {
+const parameterMultiplier = (itemArray,multiplier,parameter) => {
     const arrayResult = itemArray.map(({...item}) => {
-        if (!parametr)  {parametr = 'age'}
-        item[parametr] *= multIndex
+        if (parameter == 'undefined')  {parameter = 'age'}
+        item[parameter] *= multiplier
         return item
     })
     return arrayResult
 }
 
-const arrayMultiplied = parametrMultiplier(clients,2,'age')
-const arrayMultipliedWithoutParametr = parametrMultiplier(clients,2)
+const arrayMultiplied = parameterMultiplier(clients,2,'age')
+const arrayMultipliedWithoutParameter = parameterMultiplier(clients,2)
 console.table(arrayMultiplied)
-console.table(arrayMultipliedWithoutParametr)
+console.table(arrayMultipliedWithoutParameter)
