@@ -9,12 +9,13 @@ const clients = [person1,person2,person3,person4,person5,person6]
 
 const parametrMultiplier = (itemArray,multIndex,param) => {
     const arrayResult = itemArray.map(({...item}) => {
+        if (!param)  {param = 'age'}
         item[param] *= multIndex
         return item
     })
     return arrayResult
 }
 
-const arrayMultiplied = parametrMultiplier(clients,2,'age')
+const arrayMultiplied = parametrMultiplier(clients,2)
 
 console.table(arrayMultiplied)
