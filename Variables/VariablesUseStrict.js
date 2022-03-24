@@ -1,5 +1,5 @@
-'use strict'
-WrongDeclaration = 9  
+"use strict"
+WrongDeclaration = 9
 const a = 10
 let b = 10
 var c = 11
