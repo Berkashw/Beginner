@@ -16,4 +16,5 @@ console.log(
     return isEqual
   })
 )
+
 console.log(clients.find(({ name }) => name === 'Bori'))
