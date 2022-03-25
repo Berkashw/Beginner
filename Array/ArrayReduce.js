@@ -6,6 +6,7 @@ const person5 = { age: 17, name: 'Fin', city: 'Tula', authorized: true }
 const person6 = { age: 49, name: 'Gor', city: 'Tver', authorized: false }
 
 const clients = [person1, person2, person3, person4, person5, person6]
+
 const sumAgesOfClients = clients.reduce((acum, client) => {
   acum = acum + client.age
   console.log(acum)

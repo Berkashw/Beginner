@@ -5,4 +5,5 @@ const sumNumbers = sum
 const concatStrings = sum
 
 console.log(sumNumbers(2, 3))
+
 console.log(concatStrings('Wor1 ', 'Word2'))

@@ -11,4 +11,5 @@ const clientsAddMap = clients.map((el) => {
   el.maped = true
   return el
 })
+
 console.table(clientsAddMap)

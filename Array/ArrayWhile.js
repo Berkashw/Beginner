@@ -13,4 +13,5 @@ while (i < clients.length) {
   clients[i].older = true
   i++
 }
+
 console.table(clients)

@@ -24,5 +24,7 @@ const arrayMultipliedWithoutParameter = getArrayWhithMultipliedParameter(
   clients,
   2
 )
+
 console.table(arrayMultiplied)
+
 console.table(arrayMultipliedWithoutParameter)

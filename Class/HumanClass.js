@@ -19,6 +19,7 @@ class Person {
     this.country = human.country
   }
 }
+
 class Employee extends Person {
   constructor(human) {
     super(human)
@@ -36,9 +37,12 @@ class Employee extends Person {
     }
   }
 }
+
 const employee1 = new Employee(humanOne)
+
 employee1.sayHello()
 employee1.employeeCheck()
+
 const employee2 = new Employee(humanTwo)
 employee2.sayHello()
 employee2.employeeCheck()

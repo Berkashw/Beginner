@@ -12,5 +12,6 @@ function multiple(client, multIndex) {
 const clientsDoubleAge = clients.map(({ ...client }) => multiple(client, 2))
 
 const clientsTripleAge = clients.map(({ ...client }) => multiple(client, 3))
+
 console.table(clientsDoubleAge)
 console.table(clientsTripleAge)

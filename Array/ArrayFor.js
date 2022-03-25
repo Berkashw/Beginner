@@ -12,4 +12,5 @@ for (i = 0; i < clients.length; i++) {
   currentClient.age += currentClient.age
   currentClient.older = true
 }
+
 console.table(clients)
