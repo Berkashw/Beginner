@@ -26,4 +26,3 @@ const arrayMultipliedWithoutParameter = getArrayWhithMultipliedParameter(
 )
 console.table(arrayMultiplied)
 console.table(arrayMultipliedWithoutParameter)
-f
