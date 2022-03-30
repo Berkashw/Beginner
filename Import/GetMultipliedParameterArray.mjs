@@ -7,8 +7,8 @@ const person6 = { age: 49, name: 'Gor', city: 'Tver', authorized: false }
 
 const clients = [person1, person2, person3, person4, person5, person6]
 
-import { getArrayWhithMultipliedParameter as getMultipliedArray } from '../Array/ArrayMultiplier.mjs'
+import { getArrayWhithMultipliedParameter as getMultipliedParameter } from '../Export/MathFunctions.mjs'
 
-const arrayMultiplied = getMultipliedArray(clients, 4, 'age')
+const arrayMultiplied = getMultipliedParameter(clients, 2, 'age')
 
 console.table(arrayMultiplied)
