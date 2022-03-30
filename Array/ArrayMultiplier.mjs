@@ -6,7 +6,7 @@ const person5 = { age: 17, name: 'Fin', city: 'Tula', authorized: true }
 const person6 = { age: 49, name: 'Gor', city: 'Tver', authorized: false }
 
 const clients = [person1, person2, person3, person4, person5, person6]
-
+// "../Array/ArrayMultiplier.mjs"
 const getArrayWhithMultipliedParameter = (
   array,
   multiplier,
@@ -18,7 +18,7 @@ const getArrayWhithMultipliedParameter = (
   })
   return arrayResult
 }
-
+export { getArrayWhithMultipliedParameter }
 const arrayMultiplied = getArrayWhithMultipliedParameter(clients, 2, 'age')
 const arrayMultipliedWithoutParameter = getArrayWhithMultipliedParameter(
   clients,
