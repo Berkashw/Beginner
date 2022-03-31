@@ -12,3 +12,7 @@ import { getArrayWhithMultipliedParameter as getMultipliedParameter } from '../E
 const arrayMultiplied = getMultipliedParameter(clients, 2, 'age')
 
 console.table(arrayMultiplied)
+
+import { reverseString } from '../Utilities/ReverseStringFunction.mjs'
+
+console.log(reverseString(person1.city))
