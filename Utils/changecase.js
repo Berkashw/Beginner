@@ -1,13 +1,19 @@
-const getReverseCaseString = (defaultString) => {
-  var arrayFromString = [...defaultString]
+//../Utils/changecase.js
 
-  const reverseString = arrayFromString.map((char) => {
-    if (char === char.toUpperCase()) {
-      return char.toLowerCase()
-    } else {
+const getReverseCaseString = (defaultString) => {
+  const reverseStringArray = [...defaultString].map((char, index) => {
+    if (index === 0) {
       return char.toUpperCase()
+    } else {
+      if (char === char.toUpperCase()) {
+        return char.toLowerCase()
+      } else {
+        return char.toUpperCase()
+      }
     }
   })
-  return reverseString.join('')
+
+  return reverseStringArray.join('')
 }
-console.log(getReverseCaseString('hELLo Hello'))
+console.log(getReverseCaseString('heLLo'))
+export { getReverseCaseString }
