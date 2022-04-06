@@ -10,4 +10,5 @@ const getFirstUpCaseString = (defaultString) => {
   })
   return reverseStringArray.join('')
 }
-console.log(getFirstUpCaseString('nAME'))
+
+export { getFirstUpCaseString }
