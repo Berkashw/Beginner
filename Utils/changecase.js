@@ -2,18 +2,14 @@
 
 const getReverseCaseString = (defaultString) => {
   const reverseStringArray = [...defaultString].map((char, index) => {
-    if (index === 0) {
-      return char.toUpperCase()
+    if (char === char.toUpperCase()) {
+      return char.toLowerCase()
     } else {
-      if (char === char.toUpperCase()) {
-        return char.toLowerCase()
-      } else {
-        return char.toUpperCase()
-      }
+      return char.toUpperCase()
     }
   })
 
   return reverseStringArray.join('')
 }
-console.log(getReverseCaseString('heLLo'))
+console.log(getReverseCaseString('HeLLo'))
 export { getReverseCaseString }
