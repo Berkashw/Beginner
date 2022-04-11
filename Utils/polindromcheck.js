@@ -1,4 +1,4 @@
-import { reverseString } from './ReverseStringFunction.js'
+import { reverseString } from './reversestring.js'
 
 const polindromcheck = (string) => string === reverseString(string)
 
