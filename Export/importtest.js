@@ -1,6 +1,6 @@
 import { polindromcheck } from '../Utils/polindromcheck.js'
 import { getParameterCheck } from '../Utils/parametercheck.js'
-
+import { getRandomNumber } from '../Utils/getrandomnumber.js'
 console.log(polindromcheck('adaada'))
 
 const someObject = {
@@ -11,3 +11,4 @@ const someObject = {
 }
 
 console.log(getParameterCheck(someObject, 'anynumber'))
+console.log(getRandomNumber(10, 200))

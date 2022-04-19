@@ -1,5 +1,7 @@
+// .//Utils/getrandomnumber.js
+
 const getRandomNumber = (min, max) => {
-  const ranmdomNumber = Math.random() * (max - min) + min
-  return Math.ceil(ranmdomNumber)
+  const randomNumber = Math.random() * (max - min) + min
+  return Math.ceil(randomNumber)
 }
-console.log(getRandomNumber(10, 20))
+export { getRandomNumber }
