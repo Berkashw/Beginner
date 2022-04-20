@@ -11,4 +11,4 @@ const someObject = {
 }
 
 console.log(getParameterCheck(someObject, 'anynumber'))
-console.log(getRandomNumber(10, 200))
+console.log(getRandomNumber(10, 15))

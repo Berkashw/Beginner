@@ -2,6 +2,6 @@
 
 const getRandomNumber = (min, max) => {
   const randomNumber = Math.random() * (max - min) + min
-  return Math.ceil(randomNumber)
+  return Math.round(randomNumber)
 }
 export { getRandomNumber }
