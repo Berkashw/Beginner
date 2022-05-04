@@ -1,5 +1,5 @@
-import { reverseString } from './reversestring.js'
+const reverseString = require('../Utils/reversestring.js')
 
 const polindromcheck = (string) => string === reverseString(string)
 
-export { polindromcheck }
+module.exports = polindromcheck
