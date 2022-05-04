@@ -1,4 +1,8 @@
+// ../Utils/getapropriatenumberstring.js
 const getApropriateString = (number, separator, currency) => {
   const numberString = String(number)
+  return numberString
 }
-getApropriateString(100500200, ' ', 'Р.')
+
+const getSeparatedString = (string, number, separator) => {}
+module.exports = getApropriateString
