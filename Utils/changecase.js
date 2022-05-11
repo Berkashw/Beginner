@@ -12,4 +12,4 @@ const getReverseCaseString = (defaultString) => {
   return reverseStringArray.join('')
 }
 console.log(getReverseCaseString('HeLLo'))
-export { getReverseCaseString }
+module.exports = getReverseCaseString

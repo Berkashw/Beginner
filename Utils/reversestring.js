@@ -1,4 +1,5 @@
-// ../Utilities/ReverseStringFunction.js
+// ../Utils/reversesting.js
 
 const reverseString = ([...string]) => string.reverse().join('')
+
 module.exports = reverseString
