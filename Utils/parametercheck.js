@@ -5,4 +5,4 @@ const getParameterCheck = (defaultObject, parameter) => {
   else return false
 }
 
-export { getParameterCheck }
+module.exports = getParameterCheck

@@ -1,6 +1,6 @@
-import { polindromcheck } from '../Utils/polindromcheck.js'
-import { getParameterCheck } from '../Utils/parametercheck.js'
-import { getRandomNumber } from '../Utils/getrandomnumber.js'
+const polindromcheck = require('../Utils/polindromcheck.js')
+const getParameterCheck = require('../Utils/parametercheck.js')
+const getRandomNumber = require('../Utils/getrandomnumber.js')
 console.log(polindromcheck('adaada'))
 
 const someObject = {
