@@ -1,5 +1,5 @@
 const getArrayIndex = (defaultarray) => {
-  console.log(defaultarray.length)
+  return defaultarray.length
 }
 
-getArrayIndex([1, 3, 3])
+module.exports = getArrayIndex
