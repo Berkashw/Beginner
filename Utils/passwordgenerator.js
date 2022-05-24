@@ -57,8 +57,22 @@ const charArray2 = [
 ]
 const charArray3 = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
-const getRandomString = (passwordLength) => {
-  tempCharArray = [...charArray1, ...charArray2, ...charArray3]
+const getRandomString = (
+  passwordLength = 8,
+  smallLetters = true,
+  capitalLetters = true,
+  numberLetters = true
+) => {
+  var tempCharArray = []
+  if (smallLetters) {
+    tempCharArray = [...tempCharArray, ...charArray1]
+  }
+  if (capitalLetters) {
+    tempCharArray = [...tempCharArray, ...charArray2]
+  }
+  if (numberLetters) {
+    tempCharArray = [...tempCharArray, ...charArray3]
+  }
   var randomString = ''
   for (i = 0; i < passwordLength; i++) {
     randomString += tempCharArray[getRandomNumber(0, tempCharArray.length)]
