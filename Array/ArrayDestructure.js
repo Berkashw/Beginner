@@ -4,4 +4,4 @@ const person3 = { age: 10, name: 'Den', city: 'Tver', authorized: true }
 
 const { age, name, city, authorized } = person1
 
-console.log(city)
+console.log(age)
